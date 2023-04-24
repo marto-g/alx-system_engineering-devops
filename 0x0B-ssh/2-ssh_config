@@ -1,5 +1,10 @@
+# ssh_config
+
 Host *
-  StrictHostKeyChecking no
-  UserKnownHostsFile /dev/null
-  IdentityFile ~/.ssh/school
-  PasswordAuthentication no
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/school
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    HostName 34.229.67.31
+    User ubuntu
